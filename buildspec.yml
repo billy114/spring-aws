@@ -1,0 +1,11 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      java: corretto17
+  build:
+    commands:
+      - mvn -q clean package -DskipTests
+artifacts:
+  files:
+    - target/*.jar
